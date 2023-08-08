@@ -19,7 +19,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					<NavBar />
 				</header>
 				<main className="grow py-3">{children}</main>
-				<footer className="border-t py-3 text-center text-sm">[footer]</footer>
+				<footer className="border-t py-3 text-center text-slate-500 text-xs">
+					Game data and images courtesy of{' '}
+					<a href="https://rawg.io/" target="_blank" className="text-orange-800 hover:underline">
+						RAWG
+					</a>
+				</footer>
 			</body>
 		</html>
 	)
